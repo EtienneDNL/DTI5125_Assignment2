@@ -102,6 +102,25 @@ wheels = [
 ]
 
 [[package]]
+name = "bertopic"
+version = "0.17.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "hdbscan" },
+    { name = "numpy" },
+    { name = "pandas" },
+    { name = "plotly" },
+    { name = "scikit-learn" },
+    { name = "sentence-transformers" },
+    { name = "tqdm" },
+    { name = "umap-learn" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/d1/f3/a2c789f4aeb7bd7aa8f11de82ff21401515663105290486259477b0da0f2/bertopic-0.17.0.tar.gz", hash = "sha256:defcbb840ab5ccca0602307a566ae319cfff061fa5f98ad63b081b78b555626c", size = 118584, upload-time = "2025-03-19T16:46:56.828Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/a6/de/e1b9fd12678c36afa0176422a3819438c8e631409c3bf5c0896ad5dd555a/bertopic-0.17.0-py3-none-any.whl", hash = "sha256:558ef81cbff543e1336ed47de6947d3bc5b0c2c8e89f42e2ff4fbe27a8491d29", size = 150627, upload-time = "2025-03-19T16:46:55.569Z" },
+]
+
+[[package]]
 name = "certifi"
 version = "2025.4.26"
 source = { registry = "https://pypi.org/simple" }
@@ -292,7 +311,9 @@ name = "dti5125-assignment2"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
+    { name = "bertopic" },
     { name = "einops" },
+    { name = "evoc" },
     { name = "hdbscan" },
     { name = "ipykernel" },
     { name = "ipywidgets" },
@@ -300,6 +321,7 @@ dependencies = [
     { name = "nltk" },
     { name = "numpy" },
     { name = "pandas" },
+    { name = "plotly" },
     { name = "pythreejs" },
     { name = "pyvista" },
     { name = "pyvistaqt" },
@@ -312,7 +334,9 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
+    { name = "bertopic", specifier = ">=0.17.0" },
     { name = "einops", specifier = ">=0.8.1" },
+    { name = "evoc", specifier = ">=0.1.3" },
     { name = "hdbscan", specifier = ">=0.8.40" },
     { name = "ipykernel", specifier = ">=6.29.5" },
     { name = "ipywidgets", specifier = ">=8.1.7" },
@@ -320,6 +344,7 @@ requires-dist = [
     { name = "nltk", specifier = ">=3.9.1" },
     { name = "numpy", specifier = "==2.2" },
     { name = "pandas", specifier = ">=2.3.0" },
+    { name = "plotly", specifier = ">=6.1.2" },
     { name = "pythreejs", specifier = ">=2.4.2" },
     { name = "pyvista", extras = ["notebook"], specifier = ">=0.45.2" },
     { name = "pyvistaqt", specifier = ">=0.11.2" },
@@ -337,6 +362,21 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/e5/81/df4fbe24dff8ba3934af99044188e20a98ed441ad17a274539b74e82e126/einops-0.8.1.tar.gz", hash = "sha256:de5d960a7a761225532e0f1959e5315ebeafc0cd43394732f103ca44b9837e84", size = 54805, upload-time = "2025-02-09T03:17:00.434Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/87/62/9773de14fe6c45c23649e98b83231fffd7b9892b6cf863251dc2afa73643/einops-0.8.1-py3-none-any.whl", hash = "sha256:919387eb55330f5757c6bea9165c5ff5cfe63a642682ea788a6d472576d81737", size = 64359, upload-time = "2025-02-09T03:17:01.998Z" },
+]
+
+[[package]]
+name = "evoc"
+version = "0.1.3"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "numba" },
+    { name = "numpy" },
+    { name = "scikit-learn" },
+    { name = "tqdm" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/45/81/388e2a8a2c6099382b2f1510376e6726f66c3e55063473172a782d92a613/evoc-0.1.3.tar.gz", hash = "sha256:c59c1158e001a6fc59b4b88635668aa05e35bfbc9fe3d02f21c340d262bfbea2", size = 33032, upload-time = "2025-02-28T20:01:34.38Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/7b/3c/a600f3e04dd9c858094bc8a7f6f91f88de72345709f463ac9c2c24c33544/evoc-0.1.3-py3-none-any.whl", hash = "sha256:b22a339835c49e845cc23d1ddbae4b6c343f976c6293e0f917176b8cfe78013e", size = 39253, upload-time = "2025-02-28T20:01:32.611Z" },
 ]
 
 [[package]]
@@ -947,6 +987,15 @@ wheels = [
 ]
 
 [[package]]
+name = "narwhals"
+version = "1.42.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/a2/7e/9484c2427453bd0024fd36cf7923de4367d749f0b216b9ca56b9dfc3c516/narwhals-1.42.0.tar.gz", hash = "sha256:a5e554782446d1197593312651352cd39b2025e995053d8e6bdfaa01a70a91d3", size = 490671, upload-time = "2025-06-09T09:20:27.794Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/8d/0f/f9ae7c8c55f9078c852b13ea4a6e92e5f4d6d4c8fc0781ec2882957006bb/narwhals-1.42.0-py3-none-any.whl", hash = "sha256:ef6cedf7700dc22c09d17973b9ede11b53e25331e238b24ac73884a8c5e27c19", size = 359033, upload-time = "2025-06-09T09:20:25.668Z" },
+]
+
+[[package]]
 name = "nest-asyncio"
 version = "1.6.0"
 source = { registry = "https://pypi.org/simple" }
@@ -1319,6 +1368,19 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/fe/8b/3c73abc9c759ecd3f1f7ceff6685840859e8070c4d947c93fae71f6a0bf2/platformdirs-4.3.8.tar.gz", hash = "sha256:3d512d96e16bcb959a814c9f348431070822a6496326a4be0911c40b5a74c2bc", size = 21362, upload-time = "2025-05-07T22:47:42.121Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/fe/39/979e8e21520d4e47a0bbe349e2713c0aac6f3d853d0e5b34d76206c439aa/platformdirs-4.3.8-py3-none-any.whl", hash = "sha256:ff7059bb7eb1179e2685604f4aaf157cfd9535242bd23742eadc3c13542139b4", size = 18567, upload-time = "2025-05-07T22:47:40.376Z" },
+]
+
+[[package]]
+name = "plotly"
+version = "6.1.2"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "narwhals" },
+    { name = "packaging" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/ae/77/431447616eda6a432dc3ce541b3f808ecb8803ea3d4ab2573b67f8eb4208/plotly-6.1.2.tar.gz", hash = "sha256:4fdaa228926ba3e3a213f4d1713287e69dcad1a7e66cf2025bd7d7026d5014b4", size = 7662971, upload-time = "2025-05-27T20:21:52.56Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/bf/6f/759d5da0517547a5d38aabf05d04d9f8adf83391d2c7fc33f904417d3ba2/plotly-6.1.2-py3-none-any.whl", hash = "sha256:f1548a8ed9158d59e03d7fed548c7db5549f3130d9ae19293c8638c202648f6d", size = 16265530, upload-time = "2025-05-27T20:21:46.6Z" },
 ]
 
 [[package]]
