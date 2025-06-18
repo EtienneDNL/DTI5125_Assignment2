@@ -137,7 +137,7 @@ jupyter notebook embeddings_UMAP_HDBSCAN.ipynb
 jupyter notebook embeddings_EVoC.ipynb
 5. View Results
 Open the .html files in a browser to explore interactive 3D cluster visualizations.
- 
+``` 
 💡 Insights
 The choice of embedding and dimensionality reduction greatly impacts cluster quality.
  
