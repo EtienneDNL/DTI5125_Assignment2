@@ -65,12 +65,13 @@ The following clustering techniques were applied to sentence embeddings generate
 ### 🏁 Cohen's Kappa Scores:
 | Method                         | Description                                  | Cohen's Kappa |
 |-------------------------------|----------------------------------------------|----------------|
-| **GMM on Raw Embeddings**     | Sentence embeddings directly clustered       | ~0.69–0.70     |
-| **GMM with PCA (50D → 2D)**   | PCA-reduced features fed to GMM              | ~0.66–0.68     |
-| **KMeans on Embeddings**      | Raw sentence embeddings                      | ~0.65          |
-| **KMeans with t-SNE**         | 2D t-SNE embeddings → KMeans                 | ~0.67          |
-| **HDBSCAN with UMAP**         | Dense regions clustered; noise filtered      | ~0.64 (with noise excluded) |
-| **EVoC with UMAP + BERTopic** | Best interpretability and labeling potential | ~0.70+         |
+| **GMM on Raw Embeddings**     | Sentence embeddings directly clustered       | ~0.7650        |
+| **GMM with PCA (50D → 2D)**   | PCA-reduced features fed to GMM              | ~0.7192        |
+| **KMeans on Embeddings**      | Raw sentence embeddings                      | ~0.7650        |
+| **KMeans with t-SNE**         | 2D t-SNE embeddings → KMeans                 | ~0.7466        |
+| **HDBSCAN with UMAP**         | Dense regions clustered; noise filtered      | ~0.7901 (with noise excluded) |
+| **EVoC with UMAP (pre-tuning)**            | Best interpretability and labeling potential | ~0.7686        |
+| **EVoC with UMAP**            | Best interpretability and labeling potential | ~0.8463        |
  
 ### 🔍 Key Observations:
 - **EVoC** performed best both visually and in evaluation, with **well-separated clusters** and meaningful **BERTopic-derived labels**.
@@ -146,7 +147,7 @@ Topic modeling adds interpretability by labeling clusters with meaningful words.
  
 Unsupervised clustering, when paired with proper embeddings, can approximate labeled classification performance.
  
-🛠 Dependencies
+## 🛠 Dependencies
 Python 3.10+
  
 sentence-transformers
