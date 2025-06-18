@@ -104,8 +104,7 @@ All HTML files are saved locally and can be opened in a web browser for explorat
 git clone https://github.com/EtienneDNL/DTI5125_Assignment2.git
 cd DTI5125_Assignment2
 2. Set Up Environment
-If using uv:
- 
+If using uv
 bash
 Copy
 Edit
@@ -138,7 +137,7 @@ jupyter notebook embeddings_EVoC.ipynb
 5. View Results
 Open the .html files in a browser to explore interactive 3D cluster visualizations.
 ``` 
-💡 Insights
+## 💡 Insights
 The choice of embedding and dimensionality reduction greatly impacts cluster quality.
  
 EVoC and GMM both yield high-quality clusters with good alignment to the actual domains.
